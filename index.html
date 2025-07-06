@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>MyShop</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <div id="cart-item">🛒(<span id="cart-count">0</span>)</div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>New Arrivals Are Here!</h2>
+            <button>Shop Now</button>
+        </section>
+        <section class="product-grid" id="product-grid">
+
+        </section>
+    </main>
+    <div id="cart-modal" class="hidden">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="cart-total">0</span></p>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+    <hr>    
+    <footer>
+  <section class="navFooter">
+    <nav>
+      <ul class="footer-nav-links">
+        <!-- Contact Info Dropdown -->
+        <li class="dropdown">
+          <a href="#"><u>Contact info</u></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="fas fa-envelope">Email - <span>ekanshaman2512@gmail.com</span></i></a></li>
+            <li><a href="#"><i class="fas fa-phone">Phone No - <span>+91 8604668722</i></span></a></li>
+          </ul>
+        </li>
+
+        <!-- Social Media Dropdown -->
+        <li class="dropdown">
+          <a href="#"><u>Social Media Links</u></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.instagram.com/ekanshaman/" target="_blank"><i class="fab fa-instagram">Instagram</i></a></li>
+            <li><a href="https://x.com/EkanshNarayanM1" target="_blank"><i class="fab fa-x-twitter">Twitter</i></a></li>
+            <li><a href="https://www.facebook.com/ekansh.aman/" target="_blank"><i class="fab fa-facebook">Facebook</i></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <div class="theme-toggle">
+    <button id="themeButton"><i class="fas fa-moon">Toggle Dark/Light</i></button>
+  </div>
+</footer>
+    <script src="./script.js"></script>
+</body>
+</html>
